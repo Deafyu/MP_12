@@ -124,32 +124,32 @@ MP_12\fast:
 	$(MAKE) -f CMakeFiles\MP_12.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\MP_12.dir\build
 .PHONY : MP_12\fast
 
-libs\libClasses.obj: libs\libClasses.cpp.obj
+libs\CTable.obj: libs\CTable.cpp.obj
 
-.PHONY : libs\libClasses.obj
+.PHONY : libs\CTable.obj
 
 # target to build an object file
-libs\libClasses.cpp.obj:
-	$(MAKE) -f CMakeFiles\MP_12.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\MP_12.dir\libs\libClasses.cpp.obj
-.PHONY : libs\libClasses.cpp.obj
+libs\CTable.cpp.obj:
+	$(MAKE) -f CMakeFiles\MP_12.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\MP_12.dir\libs\CTable.cpp.obj
+.PHONY : libs\CTable.cpp.obj
 
-libs\libClasses.i: libs\libClasses.cpp.i
+libs\CTable.i: libs\CTable.cpp.i
 
-.PHONY : libs\libClasses.i
+.PHONY : libs\CTable.i
 
 # target to preprocess a source file
-libs\libClasses.cpp.i:
-	$(MAKE) -f CMakeFiles\MP_12.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\MP_12.dir\libs\libClasses.cpp.i
-.PHONY : libs\libClasses.cpp.i
+libs\CTable.cpp.i:
+	$(MAKE) -f CMakeFiles\MP_12.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\MP_12.dir\libs\CTable.cpp.i
+.PHONY : libs\CTable.cpp.i
 
-libs\libClasses.s: libs\libClasses.cpp.s
+libs\CTable.s: libs\CTable.cpp.s
 
-.PHONY : libs\libClasses.s
+.PHONY : libs\CTable.s
 
 # target to generate assembly for a file
-libs\libClasses.cpp.s:
-	$(MAKE) -f CMakeFiles\MP_12.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\MP_12.dir\libs\libClasses.cpp.s
-.PHONY : libs\libClasses.cpp.s
+libs\CTable.cpp.s:
+	$(MAKE) -f CMakeFiles\MP_12.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\MP_12.dir\libs\CTable.cpp.s
+.PHONY : libs\CTable.cpp.s
 
 main.obj: main.cpp.obj
 
@@ -187,9 +187,9 @@ help:
 	@echo ... MP_12
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... libs/libClasses.obj
-	@echo ... libs/libClasses.i
-	@echo ... libs/libClasses.s
+	@echo ... libs/CTable.obj
+	@echo ... libs/CTable.i
+	@echo ... libs/CTable.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

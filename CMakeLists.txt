@@ -3,4 +3,4 @@ project(MP_12)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(MP_12 main.cpp libs/libClasses.cpp libs/libClasses.h)
+add_executable(MP_12 main.cpp libs/CTable.cpp libs/CTable.h)
