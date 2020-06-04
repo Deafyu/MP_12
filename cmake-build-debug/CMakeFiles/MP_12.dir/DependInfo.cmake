@@ -4,10 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/knies/CLionProjects/MP_12/libs/libClasses.cpp" "C:/Users/knies/CLionProjects/MP_12/cmake-build-debug/CMakeFiles/MP_12.dir/libs/libClasses.cpp.obj"
-  "C:/Users/knies/CLionProjects/MP_12/main.cpp" "C:/Users/knies/CLionProjects/MP_12/cmake-build-debug/CMakeFiles/MP_12.dir/main.cpp.obj"
+  "C:/Users/biong/CLionProjects/MP_12/libs/libClasses.cpp" "C:/Users/biong/CLionProjects/MP_12/cmake-build-debug/CMakeFiles/MP_12.dir/libs/libClasses.cpp.obj"
+  "C:/Users/biong/CLionProjects/MP_12/main.cpp" "C:/Users/biong/CLionProjects/MP_12/cmake-build-debug/CMakeFiles/MP_12.dir/main.cpp.obj"
   )
-set(CMAKE_CXX_COMPILER_ID "GNU")
+set(CMAKE_CXX_COMPILER_ID "MSVC")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
