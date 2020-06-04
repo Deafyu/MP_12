@@ -122,6 +122,33 @@ MP_12/fast:
 	$(MAKE) -f CMakeFiles\MP_12.dir\build.make CMakeFiles/MP_12.dir/build
 .PHONY : MP_12/fast
 
+libs/libClasses.obj: libs/libClasses.cpp.obj
+
+.PHONY : libs/libClasses.obj
+
+# target to build an object file
+libs/libClasses.cpp.obj:
+	$(MAKE) -f CMakeFiles\MP_12.dir\build.make CMakeFiles/MP_12.dir/libs/libClasses.cpp.obj
+.PHONY : libs/libClasses.cpp.obj
+
+libs/libClasses.i: libs/libClasses.cpp.i
+
+.PHONY : libs/libClasses.i
+
+# target to preprocess a source file
+libs/libClasses.cpp.i:
+	$(MAKE) -f CMakeFiles\MP_12.dir\build.make CMakeFiles/MP_12.dir/libs/libClasses.cpp.i
+.PHONY : libs/libClasses.cpp.i
+
+libs/libClasses.s: libs/libClasses.cpp.s
+
+.PHONY : libs/libClasses.s
+
+# target to generate assembly for a file
+libs/libClasses.cpp.s:
+	$(MAKE) -f CMakeFiles\MP_12.dir\build.make CMakeFiles/MP_12.dir/libs/libClasses.cpp.s
+.PHONY : libs/libClasses.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -158,6 +185,9 @@ help:
 	@echo ... MP_12
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... libs/libClasses.obj
+	@echo ... libs/libClasses.i
+	@echo ... libs/libClasses.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

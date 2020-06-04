@@ -80,6 +80,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/knies/CLionProjects/MP_12/libs/libClasses.cpp">
+			<Option target="MP_12"/>
+		</Unit>
+		<Unit filename="C:/Users/knies/CLionProjects/MP_12/libs/libClasses.h">
+			<Option target="MP_12"/>
+		</Unit>
 		<Unit filename="C:/Users/knies/CLionProjects/MP_12/main.cpp">
 			<Option target="MP_12"/>
 		</Unit>
