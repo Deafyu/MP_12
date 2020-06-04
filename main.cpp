@@ -1,7 +1,10 @@
 #include <iostream>
-
+#include "libs/CSortTable.h"
 int main() {
-    std::cout << "Hello, World!" << std::endl;
-    std::cout << "twoj stary psijany" << std::endl;
+    srand( time( nullptr ) );
+    CSortTable cSortTable;
+    cSortTable.arraySize();
+    cSortTable.fillArray();
+    cSortTable.displayArray();
     return 0;
 }

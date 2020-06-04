@@ -122,32 +122,32 @@ MP_12/fast:
 	$(MAKE) -f CMakeFiles\MP_12.dir\build.make CMakeFiles/MP_12.dir/build
 .PHONY : MP_12/fast
 
-libs/libClasses.obj: libs/libClasses.cpp.obj
+libs/CSortTable.obj: libs/CSortTable.cpp.obj
 
-.PHONY : libs/libClasses.obj
+.PHONY : libs/CSortTable.obj
 
 # target to build an object file
-libs/libClasses.cpp.obj:
-	$(MAKE) -f CMakeFiles\MP_12.dir\build.make CMakeFiles/MP_12.dir/libs/libClasses.cpp.obj
-.PHONY : libs/libClasses.cpp.obj
+libs/CSortTable.cpp.obj:
+	$(MAKE) -f CMakeFiles\MP_12.dir\build.make CMakeFiles/MP_12.dir/libs/CSortTable.cpp.obj
+.PHONY : libs/CSortTable.cpp.obj
 
-libs/libClasses.i: libs/libClasses.cpp.i
+libs/CSortTable.i: libs/CSortTable.cpp.i
 
-.PHONY : libs/libClasses.i
+.PHONY : libs/CSortTable.i
 
 # target to preprocess a source file
-libs/libClasses.cpp.i:
-	$(MAKE) -f CMakeFiles\MP_12.dir\build.make CMakeFiles/MP_12.dir/libs/libClasses.cpp.i
-.PHONY : libs/libClasses.cpp.i
+libs/CSortTable.cpp.i:
+	$(MAKE) -f CMakeFiles\MP_12.dir\build.make CMakeFiles/MP_12.dir/libs/CSortTable.cpp.i
+.PHONY : libs/CSortTable.cpp.i
 
-libs/libClasses.s: libs/libClasses.cpp.s
+libs/CSortTable.s: libs/CSortTable.cpp.s
 
-.PHONY : libs/libClasses.s
+.PHONY : libs/CSortTable.s
 
 # target to generate assembly for a file
-libs/libClasses.cpp.s:
-	$(MAKE) -f CMakeFiles\MP_12.dir\build.make CMakeFiles/MP_12.dir/libs/libClasses.cpp.s
-.PHONY : libs/libClasses.cpp.s
+libs/CSortTable.cpp.s:
+	$(MAKE) -f CMakeFiles\MP_12.dir\build.make CMakeFiles/MP_12.dir/libs/CSortTable.cpp.s
+.PHONY : libs/CSortTable.cpp.s
 
 main.obj: main.cpp.obj
 
@@ -185,9 +185,9 @@ help:
 	@echo ... MP_12
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... libs/libClasses.obj
-	@echo ... libs/libClasses.i
-	@echo ... libs/libClasses.s
+	@echo ... libs/CSortTable.obj
+	@echo ... libs/CSortTable.i
+	@echo ... libs/CSortTable.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

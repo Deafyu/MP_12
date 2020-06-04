@@ -5,9 +5,19 @@
 #ifndef MP_12_CSORTTABLE_H
 #define MP_12_CSORTTABLE_H
 
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
 
 class CSortTable {
-
+public:
+    int *array;
+    int size;
+    void arraySize();
+    void fillArray();
+    void displayArray();
+    void randomOrdered();
+    void random();
 };
 
 
