@@ -12,7 +12,7 @@ class CTable {
 
 
 class CSortTable{
-    
+
 };
 
 
