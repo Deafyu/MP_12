@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/MP_12.dir/libs/libClasses.cpp.obj"
+  "CMakeFiles/MP_12.dir/libs/CSortTable.cpp.obj"
+  "CMakeFiles/MP_12.dir/libs/libExceptions.cpp.obj"
   "CMakeFiles/MP_12.dir/main.cpp.obj"
   "MP_12.exe"
   "MP_12.exe.manifest"
