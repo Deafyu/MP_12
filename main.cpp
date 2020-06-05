@@ -1,7 +1,8 @@
 #include <iostream>
 #include "libs/CSortTable.h"
+
 int main() {
-    srand( time( nullptr ) );
+    srand(time(nullptr));
     CSortTable cSortTable;
     cSortTable.arraySize();
     cSortTable.fillArray();

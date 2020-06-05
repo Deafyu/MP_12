@@ -4,6 +4,9 @@
 CMakeFiles/MP_12.dir/libs/CSortTable.cpp.obj: ../libs/CSortTable.cpp
 CMakeFiles/MP_12.dir/libs/CSortTable.cpp.obj: ../libs/CSortTable.h
 
+CMakeFiles/MP_12.dir/libs/libExceptions.cpp.obj: ../libs/libExceptions.cpp
+CMakeFiles/MP_12.dir/libs/libExceptions.cpp.obj: ../libs/libExceptions.h
+
 CMakeFiles/MP_12.dir/main.cpp.obj: ../libs/CSortTable.h
 CMakeFiles/MP_12.dir/main.cpp.obj: ../main.cpp
 

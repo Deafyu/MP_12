@@ -18,6 +18,8 @@ public:
     void displayArray();
     void randomOrdered();
     void random();
+    void randomReverseOrdered();
+    void randomAlmostOrdered();
 };
 
 
