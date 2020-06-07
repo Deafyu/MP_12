@@ -10,6 +10,6 @@ int main() {
     cSortTable.displayArray();
     CTable ctable;
     ctable.heapSort(cSortTable);
-    cSortTable.displayArray();
+    cSortTable.displayArray();//
     return 0;
 }
