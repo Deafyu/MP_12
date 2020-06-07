@@ -12,4 +12,3 @@ namespace MyRuntimeExceptions {
  * Checks if char array has only letters and frequency array only numbers
  * @param size of the arrays, array of letters, array of frequencies
  * */
-void checkIfCorrectChar(int size, char *letters, double *freq);

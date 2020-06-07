@@ -95,7 +95,7 @@ void CSortTable::displayArray() {
 
 void CSortTable::random() {
     for (int i = 0; i < size; ++i) {
-        int b = (std::rand()%50);
+        int b = (std::rand()%1000);
         array[i] = b;
     }
 }

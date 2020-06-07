@@ -86,6 +86,12 @@
 		<Unit filename="C:/Users/knies/CLionProjects/MP_12/libs/CSortTable.h">
 			<Option target="MP_12"/>
 		</Unit>
+		<Unit filename="C:/Users/knies/CLionProjects/MP_12/libs/CTable.cpp">
+			<Option target="MP_12"/>
+		</Unit>
+		<Unit filename="C:/Users/knies/CLionProjects/MP_12/libs/CTable.h">
+			<Option target="MP_12"/>
+		</Unit>
 		<Unit filename="C:/Users/knies/CLionProjects/MP_12/libs/libExceptions.cpp">
 			<Option target="MP_12"/>
 		</Unit>

@@ -149,6 +149,33 @@ libs/CSortTable.cpp.s:
 	$(MAKE) -f CMakeFiles\MP_12.dir\build.make CMakeFiles/MP_12.dir/libs/CSortTable.cpp.s
 .PHONY : libs/CSortTable.cpp.s
 
+libs/CTable.obj: libs/CTable.cpp.obj
+
+.PHONY : libs/CTable.obj
+
+# target to build an object file
+libs/CTable.cpp.obj:
+	$(MAKE) -f CMakeFiles\MP_12.dir\build.make CMakeFiles/MP_12.dir/libs/CTable.cpp.obj
+.PHONY : libs/CTable.cpp.obj
+
+libs/CTable.i: libs/CTable.cpp.i
+
+.PHONY : libs/CTable.i
+
+# target to preprocess a source file
+libs/CTable.cpp.i:
+	$(MAKE) -f CMakeFiles\MP_12.dir\build.make CMakeFiles/MP_12.dir/libs/CTable.cpp.i
+.PHONY : libs/CTable.cpp.i
+
+libs/CTable.s: libs/CTable.cpp.s
+
+.PHONY : libs/CTable.s
+
+# target to generate assembly for a file
+libs/CTable.cpp.s:
+	$(MAKE) -f CMakeFiles\MP_12.dir\build.make CMakeFiles/MP_12.dir/libs/CTable.cpp.s
+.PHONY : libs/CTable.cpp.s
+
 libs/libExceptions.obj: libs/libExceptions.cpp.obj
 
 .PHONY : libs/libExceptions.obj
@@ -215,6 +242,9 @@ help:
 	@echo ... libs/CSortTable.obj
 	@echo ... libs/CSortTable.i
 	@echo ... libs/CSortTable.s
+	@echo ... libs/CTable.obj
+	@echo ... libs/CTable.i
+	@echo ... libs/CTable.s
 	@echo ... libs/libExceptions.obj
 	@echo ... libs/libExceptions.i
 	@echo ... libs/libExceptions.s
