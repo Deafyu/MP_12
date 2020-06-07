@@ -11,9 +11,9 @@ int main() {
     test.table[2] = 3;
     test.lenghtOfArray = 3;
 
-    //test.quickSortMenu(0, test.lenghtOfArray - 1);
+    test.quickSortMenu(0, test.lenghtOfArray - 1);
     //test.cocktailSort();
-    test.heapSort();
+    //test.heapSort();
 
     // show sorted table
     for (int i = 0; i < test.lenghtOfArray; i++)

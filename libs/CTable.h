@@ -19,7 +19,7 @@ public:
     void quickSortMenu(int low, int high);
 
     int lenghtOfArray = 0;
-    int table[];
+    int table[32157];
 };
 
 
