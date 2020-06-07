@@ -11,6 +11,8 @@
 
 class CSortTable {
 public:
+    int equalities = 0;
+    int swaps = 0;
     int *array;
     int size;
     void arraySize();
