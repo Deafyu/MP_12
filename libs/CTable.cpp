@@ -12,6 +12,8 @@ void CTable::cocktailSort(CSortTable &cSortTable) {
     int start = 0;
     int end = lenghtOfArray - 1;
 
+    cSortTable.name = "Bubble sorting";
+
     while (swapped) {
         // reset the swapped flag on entering
         // the loop, because it might be true from
@@ -93,6 +95,9 @@ void CTable::heapify(CSortTable &cSortTable, int n, int i) {
 void CTable::heapSort(CSortTable &cSortTable) {
     int lenghtOfArray = cSortTable.size;
     int *table = cSortTable.array;
+
+    cSortTable.name = "Heap Sort";
+
     // Build heap (rearrange array)
     for (int i = lenghtOfArray / 2 - 1; i >= 0; i--)
         heapify(cSortTable, lenghtOfArray, i);
@@ -116,6 +121,8 @@ int CTable::partitionHoare(CSortTable &cSortTable, int low, int high) {
     int *table = cSortTable.array;
     int pivot = table[low];
     int i = low - 1, j = high + 1;
+
+    cSortTable.name = "Quick sort (Hoare)";
 
     while (true) {
         // Find leftmost element greater than
@@ -149,6 +156,9 @@ int CTable::partitionLomuto(CSortTable &cSortTable, int low, int high) {
     int *table = cSortTable.array;
     int pivot = table[high];    // pivot
     int i = (low - 1);  // Index of smaller element
+
+    cSortTable.name = "Quick sort (Lomuto)";
+
     for (int j = low; j <= high - 1; j++)
         // If current element is smaller than or
         // equal to pivot

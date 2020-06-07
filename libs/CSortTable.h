@@ -15,6 +15,8 @@ public:
     int swaps = 0;
     int *array;
     int size;
+    std::string name;
+    std::string arrayType;
     void arraySize();
     void fillArray();
     void displayArray();

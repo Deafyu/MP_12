@@ -33,7 +33,7 @@ void CSortTable::arraySize() {
                 std::cout << "Wrong option" << std::endl;
             }
         }
-    } while (a != '1' and a != '2' and a != '3' and a != '4');
+    } while (a != '1' && a != '2' && a != '3' && a != '4');
 }
 
 void CSortTable::fillArray() {
@@ -52,18 +52,22 @@ void CSortTable::fillArray() {
                 switch(b){
                     case '1':{
                         random();
+                        arrayType = "Table supplemented with random numbers";
                         break;
                     }
                     case '2':{
                         randomOrdered();
+                        arrayType = "Table supplemented with random numbers sorted in ascending order";
                         break;
                     }
                     case '3':{
                         randomReverseOrdered();
+                        arrayType = "Table supplemented with random numbers sorted in descending order";
                         break;
                     }
                     case '4':{
-                        randomAlmostOrdered();
+                        randomAlmostOrdered();//partially ordered
+                        arrayType = "Table partially ordered (10% of the items are in the wrong position)";
                         break;
                     }
                     default:{
@@ -78,13 +82,14 @@ void CSortTable::fillArray() {
                     std::cin >> data;
                     array[i] = data;
                 }
+                arrayType = "Table supplemented with own numbers";
                 break;
             }
             default: {
                 std::cout << "Wrong option" << std::endl;
             }
         }
-    } while (a != '1' and a != '2' and b!='1' and b!='2' and b!='3' and b!='4');
+    } while (a != '1' && a != '2' && b!='1' && b!='2' && b!='3' && b!='4');
 }
 
 void CSortTable::displayArray() {
