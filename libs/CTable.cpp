@@ -5,10 +5,10 @@
 #include "CTable.h"
 
 // Sorts table a[0..n-1] using Cocktail sort
-void CTable::cocktailSort(int table[], int n) {
+void CTable::cocktailSort() {
     bool swapped = true;
     int start = 0;
-    int end = n - 1;
+    int end = lenghtOfArray - 1;
 
     while (swapped) {
         // reset the swapped flag on entering
@@ -55,7 +55,7 @@ void CTable::cocktailSort(int table[], int n) {
 
 // To heapify a subtree rooted with node i which is
 // an index in table[]. n is size of heap
-void CTable::heapify(int table[], int n, int i) {
+void CTable::heapify(int n, int i) {
     int largest = i; // Initialize largest as root
     int l = 2*i + 1; // left = 2*i + 1
     int r = 2*i + 2; // right = 2*i + 2
@@ -73,24 +73,24 @@ void CTable::heapify(int table[], int n, int i) {
         std::swap(table[i], table[largest]);
 
         // Recursively heapify the affected sub-tree
-        heapify(table, n, largest);
+        heapify(n, largest);
     }
 }
 
 // main function to do heap sort
-void CTable::heapSort(int table[], int n) {
+void CTable::heapSort() {
     // Build heap (rearrange array)
-    for (int i = n / 2 - 1; i >= 0; i--)
-        heapify(table, n, i);
+    for (int i = lenghtOfArray / 2 - 1; i >= 0; i--)
+        heapify(lenghtOfArray, i);
 
     // One by one extract an element from heap
-    for (int i=n-1; i>0; i--)
+    for (int i=lenghtOfArray-1; i>0; i--)
     {
         // Move current root to end
         std::swap(table[0], table[i]);
 
         // call max heapify on the reduced heap
-        heapify(table, i, 0);
+        heapify(i, 0);
     }
 }
 
@@ -99,7 +99,7 @@ void CTable::heapSort(int table[], int n) {
     array, and places all smaller (smaller than pivot)
     to left of pivot and all greater elements to right
     of pivot */
-int CTable::partitionHoare(int table[], int low, int high) {
+int CTable::partitionHoare(int low, int high) {
     int pivot = table[low];
     int i = low - 1, j = high + 1;
 
@@ -129,7 +129,7 @@ int CTable::partitionHoare(int table[], int low, int high) {
     array, and places all smaller (smaller than pivot)
     to left of pivot and all greater elements to right
     of pivot */
-int CTable::partitionLomuto(int table[], int low, int high) {
+int CTable::partitionLomuto(int low, int high) {
     int pivot = table[high];    // pivot
     int i = (low - 1);  // Index of smaller element
 
@@ -150,7 +150,7 @@ int CTable::partitionLomuto(int table[], int low, int high) {
     low  --> Starting index,
     high  --> Ending index,
     method --> Lomuto's or Hoare's method */
-void CTable::quickSort(int table[], int low, int high, int method) {
+void CTable::quickSort(int low, int high, int method) {
     if(low < high) {
         int pi;
 
@@ -158,19 +158,19 @@ void CTable::quickSort(int table[], int low, int high, int method) {
            at right place */
         switch(method) {
             case 1:
-                pi = partitionLomuto(table, low, high);
-                quickSort(table, low, pi - 1, method);
+                pi = partitionLomuto(low, high);
+                quickSort(low, pi - 1, method);
                 break;
 
             case 2:
-                pi = partitionHoare(table, low, high);
-                quickSort(table, low, pi, method);
+                pi = partitionHoare(low, high);
+                quickSort(low, pi, method);
         }
 
         // Separately sort elements before (in switch)
         // partition and after partition
 
-        quickSort(table, pi + 1, high, method);
+        quickSort(pi + 1, high, method);
     }
 }
 
@@ -178,16 +178,16 @@ void CTable::quickSort(int table[], int low, int high, int method) {
     table[] --> Array to be sorted,
     low  --> Starting index,
     high  --> Ending index */
-void CTable::quickSortMenu(int table[], int low, int high) {
+void CTable::quickSortMenu(int low, int high) {
     int choice;
 
     std::cout << "Which method do You want to use? (1 - > Lomuto, 2 - > Hoare):";
     std::cin >> choice;
 
     if((choice == 1) || choice == 2)
-        quickSort(table, low, high, choice);
+        quickSort(low, high, choice);
     else {
         std::cout << "Invalid option selected! Try again." << std::endl << std::endl;
-        quickSortMenu(table, low, high);
+        quickSortMenu(low, high);
     }
 }
